@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    /* background-color: bisque; */
+    display: flex;
+}
+
+/* left side */
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(to left, beige , gray);
+}
+
+
+.left:hover{
+    background: linear-gradient(to left, gray, beige );
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+.nav{
+    width: 100%;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.right-nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.right-nav a i{
+    color: royalblue;
+}
+
+.right1{
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* gap: 5px; */
+    margin-left: 20px;
+}
+
+.centre-text{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* float: left; */
+    /* width: 200px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.centre-text h1{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+
+.centre-text p{
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centre-text p:hover{
+    opacity: 3;
+    transition: 0.5s ease-in-out;
+}
+
+.centre-text a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.right{
+    width: 60%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    
+}
+
+.right-top{
+    display: flex;
+    /* flex-direction: column; */
+    height: 50%;
+    width: 100%;
+    background-color: red;
+}
+
+.right-bottom{
+    height: 50%;
+    width: 100%;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1463740839922-2d3b7e426a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvdHJhaXQlMjBmcnVpdHxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    background-position: top;
+    background-size: cover;
+    transition: 0.5s ease-out;
+}
+
+.right-bottom:hover{
+    background-image: url(https://images.unsplash.com/photo-1622031178094-e6b18823c64a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.top-left{
+    width: 55%;
+    height: 100%;
+    background-color: azure;
+    /* background-image: url(https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80); */
+    background-position: top;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1595475207225-428b62bda831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGZydWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+    transition: 0.5s ease-out;
+}
+
+.top-left:hover{
+    background-image: url(https://images.unsplash.com/photo-1539248519424-b4b8f9a99a4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-size: cover;
+    background-position: center;
+}
+.top-right{
+    height: 100%;
+    width: 45%;
+    /* background-color: cadetblue; */
+    background-image: url(https://images.unsplash.com/photo-1557800636-894a64c1696f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJ1aXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    background-position: top;
+    background-size: cover;
+    /* z-index: 3; */
+    transition: 0.5s ease-out;
+}
+
+.top-right:hover{
+    background-image: url(https://images.unsplash.com/photo-1592187270271-9a4b84faa228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width: 500px){
+    .main{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+
+    }
+
+    .right{
+        width: 100%;
+    }
+}
